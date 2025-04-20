@@ -18,11 +18,11 @@ int Enemy::getScoreValue() const {
 void Enemy::setType(Type newType) {
     switch(newType) {
         case Type::Grunt:
-            setTexture("enemy_grunt");
+            setTexture(ResourceManager::getInstance().getTexture("enemy_grunt"));
             velocity = {0, 150};
             break;
         case Type::Boss:
-            setTexture("enemy_boss");
+            setTexture(ResourceManager::getInstance().getTexture("enemy_boss"));
             velocity = {0, 80};
             break;
     }

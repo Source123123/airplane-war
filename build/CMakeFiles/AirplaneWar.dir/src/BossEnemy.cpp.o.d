@@ -1,6 +1,8 @@
-CMakeFiles/AirplaneWar.dir/src/Game.cpp.o: \
-  /Users/yuan/airplane_war/airplane-war/src/Game.cpp \
-  /Users/yuan/airplane_war/airplane-war/include/Game.hpp \
+CMakeFiles/AirplaneWar.dir/src/BossEnemy.cpp.o: \
+  /Users/yuan/airplane_war/airplane-war/src/BossEnemy.cpp \
+  /Users/yuan/airplane_war/airplane-war/include/BossEnemy.hpp \
+  /Users/yuan/airplane_war/airplane-war/include/Enemy.hpp \
+  /Users/yuan/airplane_war/airplane-war/include/GameObject.hpp \
   /opt/homebrew/include/SFML/Graphics.hpp \
   /opt/homebrew/include/SFML/Graphics/BlendMode.hpp \
   /opt/homebrew/include/SFML/Graphics/Export.hpp \
@@ -971,9 +973,8 @@ CMakeFiles/AirplaneWar.dir/src/Game.cpp.o: \
   /opt/homebrew/include/SFML/System/InputStream.hpp \
   /opt/homebrew/include/SFML/System/MemoryInputStream.hpp \
   /opt/homebrew/include/SFML/System/Sleep.hpp \
+  /Users/yuan/airplane_war/airplane-war/include/Game.hpp \
   /Users/yuan/airplane_war/airplane-war/include/Player.hpp \
-  /Users/yuan/airplane_war/airplane-war/include/GameObject.hpp \
-  /Users/yuan/airplane_war/airplane-war/include/Enemy.hpp \
   /Users/yuan/airplane_war/airplane-war/include/ResourceManager.hpp \
   /Users/yuan/airplane_war/airplane-war/include/CollisionGrid.hpp \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/functional \

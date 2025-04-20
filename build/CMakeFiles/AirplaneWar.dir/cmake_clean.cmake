@@ -3,6 +3,8 @@ file(REMOVE_RECURSE
   "AirplaneWar.pdb"
   "CMakeFiles/AirplaneWar.dir/src/BossEnemy.cpp.o"
   "CMakeFiles/AirplaneWar.dir/src/BossEnemy.cpp.o.d"
+  "CMakeFiles/AirplaneWar.dir/src/CollisionGrid.cpp.o"
+  "CMakeFiles/AirplaneWar.dir/src/CollisionGrid.cpp.o.d"
   "CMakeFiles/AirplaneWar.dir/src/Enemy.cpp.o"
   "CMakeFiles/AirplaneWar.dir/src/Enemy.cpp.o.d"
   "CMakeFiles/AirplaneWar.dir/src/Game.cpp.o"

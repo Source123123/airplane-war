@@ -6,6 +6,8 @@ class ResourceManager {
 private:
     std::unordered_map<std::string, sf::Texture> textures;
     std::string assetsPath = "resources/";
+
+public:
     ResourceManager() = default;
 
 public:

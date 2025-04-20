@@ -1,9 +1,12 @@
 #include "Player.hpp"
 #include "ResourceManager.hpp"
 
-Player::Player() {
-    setTexture("player");
+Player::Player() : GameObject(ResourceManager::getInstance().getTexture("player")) {
     setPosition({400, 500});
+}
+
+void Player::takeDamage(int damage) {
+    // 实现玩家受伤逻辑
 }
 
 void Player::update(float deltaTime) {
@@ -13,17 +16,12 @@ void Player::update(float deltaTime) {
 
 void Player::handleInput() {
     float speed = 300.0f;
-    if(sf::Keyboard::isKeyPressed(sf::Keyboard::Left)) velocity.x = -speed;
-    else if(sf::Keyboard::isKeyPressed(sf::Keyboard::Right)) velocity.x = speed;
+    if(sf::Keyboard::isKeyPressed(sf::Keyboard::Key::Left)) velocity.x = -speed;
+    else if(sf::Keyboard::isKeyPressed(sf::Keyboard::Key::Right)) velocity.x = speed;
     else velocity.x = 0;
 
-    if(sf::Keyboard::isKeyPressed(sf::Keyboard::Space) && currentCooldown <= 0) {
+    if(sf::Keyboard::isKeyPressed(sf::Keyboard::Key::Space) && currentCooldown <= 0) {
         fireBullet();
         currentCooldown = fireCooldown;
     }
-}
-
-void Player::setTexture(const std::string& path) {
-    texture = ResourceManager::getInstance().getTexture(path);
-    sprite.setTexture(texture);
 }

@@ -153,6 +153,30 @@ src/BossEnemy.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/AirplaneWar.dir/build.make CMakeFiles/AirplaneWar.dir/src/BossEnemy.cpp.s
 .PHONY : src/BossEnemy.cpp.s
 
+src/CollisionGrid.o: src/CollisionGrid.cpp.o
+.PHONY : src/CollisionGrid.o
+
+# target to build an object file
+src/CollisionGrid.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/AirplaneWar.dir/build.make CMakeFiles/AirplaneWar.dir/src/CollisionGrid.cpp.o
+.PHONY : src/CollisionGrid.cpp.o
+
+src/CollisionGrid.i: src/CollisionGrid.cpp.i
+.PHONY : src/CollisionGrid.i
+
+# target to preprocess a source file
+src/CollisionGrid.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/AirplaneWar.dir/build.make CMakeFiles/AirplaneWar.dir/src/CollisionGrid.cpp.i
+.PHONY : src/CollisionGrid.cpp.i
+
+src/CollisionGrid.s: src/CollisionGrid.cpp.s
+.PHONY : src/CollisionGrid.s
+
+# target to generate assembly for a file
+src/CollisionGrid.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/AirplaneWar.dir/build.make CMakeFiles/AirplaneWar.dir/src/CollisionGrid.cpp.s
+.PHONY : src/CollisionGrid.cpp.s
+
 src/Enemy.o: src/Enemy.cpp.o
 .PHONY : src/Enemy.o
 
@@ -309,6 +333,9 @@ help:
 	@echo "... src/BossEnemy.o"
 	@echo "... src/BossEnemy.i"
 	@echo "... src/BossEnemy.s"
+	@echo "... src/CollisionGrid.o"
+	@echo "... src/CollisionGrid.i"
+	@echo "... src/CollisionGrid.s"
 	@echo "... src/Enemy.o"
 	@echo "... src/Enemy.i"
 	@echo "... src/Enemy.s"
