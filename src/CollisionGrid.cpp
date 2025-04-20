@@ -15,9 +15,9 @@ void CollisionGrid::clear() {
 
 void CollisionGrid::insert(GameObject& obj) {
     sf::FloatRect bounds = obj.getGlobalBounds();
-    // 在SFML 3.x中，使用方法而不是直接访问成员变量
-    float left_pos = bounds.getPosition().x;
-    float top_pos = bounds.getPosition().y;
+    sf::Vector2f pos = obj.getPosition();
+    float left_pos = pos.x;
+    float top_pos = pos.y;
     float width_val = bounds.getSize().x;
     float height_val = bounds.getSize().y;
     

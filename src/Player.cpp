@@ -16,8 +16,8 @@ void Player::update(float deltaTime) {
 
 void Player::handleInput() {
     float speed = 300.0f;
-    if(sf::Keyboard::isKeyPressed(sf::Keyboard::Key::Left)) velocity.x = -speed;
-    else if(sf::Keyboard::isKeyPressed(sf::Keyboard::Key::Right)) velocity.x = speed;
+    if(sf::Keyboard::isKeyPressed(sf::Keyboard::Key::A)) velocity.x = -speed;
+    else if(sf::Keyboard::isKeyPressed(sf::Keyboard::Key::D)) velocity.x = speed;
     else velocity.x = 0;
 
     if(sf::Keyboard::isKeyPressed(sf::Keyboard::Key::Space) && currentCooldown <= 0) {
